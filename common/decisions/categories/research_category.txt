@@ -1,0 +1,12 @@
+Mod_decision = {	
+	icon = infiltration
+	priority = 100
+}
+SOV_decision = {	
+	icon = GFX_decision_category_SOV_civil_puppet_interaction
+    priority = 50
+}
+ITA_decision = {	
+	icon = GFX_decision_category_ITA_colonial_management
+    priority = 50
+}

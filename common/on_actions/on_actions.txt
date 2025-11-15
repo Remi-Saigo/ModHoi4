@@ -1,0 +1,40 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				add_ideas = {
+					peace_training
+				}
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+					NOT = {
+						OR = {
+							has_war = yes
+							has_idea = peace_training
+							AND = {
+								tag = SPR
+								any_country = {
+									has_volunteers_amount_from = {
+										tag = SPR
+										count > 0
+									} 
+								}	
+							}
+						}
+					}
+				}
+				add_ideas = peace_training
+			}
+		}
+	}
+	
+}
