@@ -30,9 +30,7 @@ state={
 			        level = 1
 			    }
 			}
-		    11333 = {
-				land_facility = 1
-			}
+	
 
 		}
 		add_core_of = ENG

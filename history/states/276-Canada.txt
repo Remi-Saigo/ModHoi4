@@ -18,9 +18,6 @@ state = {
 
 			# Queenston-Chippawa Hydroelectric Plant
 			749 = { dam = 1 }
-			774 = {
-				land_facility = 1
-		}
 
 		}
 		

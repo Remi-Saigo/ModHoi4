@@ -26,10 +26,6 @@ state = {
 			arms_factory = 1²
 			industrial_complex = 5
 			air_base = 3
-
-			3663 = {
-				land_facility = 1
-		}
 		}
 		
 	}

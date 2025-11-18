@@ -21,13 +21,6 @@ state = {
 			arms_factory = 2
 			dockyard = 4
 
-			4188 = {
-				land_facility = 1
-		    }
-		    1182 = {
-				air_facility = 1
-		    }
-
 			9998 = {
 				naval_base = 6
 			}
