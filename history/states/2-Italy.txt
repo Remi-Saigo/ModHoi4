@@ -28,12 +28,6 @@ state = {
                     }
                 }
             }
-			11882 = {
-				land_facility = 1
-			}
-			6862 = {
-				naval_facility = 1
-			}
 		}
 		add_core_of = ITA
 		add_core_of = PAP
