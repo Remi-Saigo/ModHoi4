@@ -9,9 +9,9 @@
     NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30
 
     -- Template cost reduction
-    NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 10 	--Base cost to unlock a regiment slot, (20 aupravant)
+    NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot, (20 aupravant)
     NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column. (5 auparavant)
-    NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5 	--Base cost to unlock a support slot (10 auparavant)
+    NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 	--Base cost to unlock a support slot (10 auparavant)
 
     -- Free Designs
     NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0   -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
@@ -20,16 +20,15 @@
     NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
 
      -- Free uggrade
-    NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 1
-    NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 1
+    NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 0
+    NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 0
 
 
     -- Cost of garentie
     NDefines.NDiplomacy.GUARANTEE_COST = 9999   -- Coût d'une garentie d'indépendence
 
     -- Save focus
-    NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 35
-
+    NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 70
     -- No XP for training
 	NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0020 -- 0.0015 de base 
 
