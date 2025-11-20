@@ -1,0 +1,17 @@
+characters={
+	CAN_mackenzie_king={
+		name=CAN_mackenzie_king
+		portraits={
+			civilian={
+				large="gfx/leaders/Tannou-Touva/portrait_amorcast.png"
+				
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			traits = { CAN_liberal_corporatist }
+			id=-1
+		}
+	}
+}
