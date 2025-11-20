@@ -13,7 +13,7 @@ state={
 		buildings = {
 			infrastructure = 5 #was: 9
 			arms_factory = 3
-			industrial_complex = 5
+			industrial_complex = 7
 			dockyard = 1
 			anti_air_building = 5
 			radar_station = 1
@@ -30,9 +30,7 @@ state={
 			        level = 1
 			    }
 			}
-		    11333 = {
-				land_facility = 1
-			}
+	
 
 		}
 		add_core_of = ENG
