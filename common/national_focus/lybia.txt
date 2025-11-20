@@ -1,0 +1,346 @@
+# LBA National Focus Tree – With relative_position_id Added
+# Clean ~50-focus tree with two mutually exclusive branches
+
+focus_tree = {
+	id = japan_wtt_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = LBA
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1200 }
+
+    ### =============================
+    ### ROOT
+    ### =============================
+
+    focus = {
+        id = LBA_national_reorganization
+        icon = GFX_goal_generic_political_reform
+        x = 0
+        y = 0
+        cost = 10
+        completion_reward = { add_political_power = 50 }
+    }
+
+    ### =============================
+    ### SPLIT – TWO EXCLUSIVE PATHS
+    ### =============================
+
+    focus = {
+        id = LBA_strengthen_colonial_government
+        icon = GFX_goal_support_italy
+        prerequisite = { focus = LBA_national_reorganization }
+        mutually_exclusive = { focus = LBA_question_of_rule }
+        relative_position_id = LBA_national_reorganization
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = { add_stability = 0.05 }
+    }
+
+    focus = {
+        id = LBA_question_of_rule
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = LBA_national_reorganization }
+        mutually_exclusive = { focus = LBA_strengthen_colonial_government }
+        relative_position_id = LBA_national_reorganization
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = { add_war_support = 0.05 }
+    }
+
+    ### =============================
+    ### ITALIAN PATH (LEFT)
+    ### =============================
+
+    focus = {
+        id = LBA_maintain_italian_authority
+        icon = GFX_goal_generic_demand_territory
+        prerequisite = { focus = LBA_strengthen_colonial_government }
+        relative_position_id = LBA_strengthen_colonial_government
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = { add_political_power = 50 }
+    }
+
+    focus = {
+        id = LBA_expand_colonial_industry
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = LBA_maintain_italian_authority }
+        relative_position_id = LBA_maintain_italian_authority
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_building_construction = {
+                type = industrial_complex
+                amount = 1
+            }
+        }
+    }
+
+    focus = {
+        id = LBA_secure_italian_garrisons
+        icon = GFX_goal_generic_army_motorized
+        prerequisite = { focus = LBA_maintain_italian_authority }
+        relative_position_id = LBA_maintain_italian_authority
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = { army_experience = 10 }
+    }
+
+    focus = {
+        id = LBA_revitalize_tripoli
+        icon = GFX_goal_generic_construct_infrastructure
+        prerequisite = { focus = LBA_expand_colonial_industry }
+        relative_position_id = LBA_expand_colonial_industry
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_building_construction = {
+                type = infrastructure
+                amount = 1
+            }
+        }
+    }
+
+    focus = {
+        id = LBA_roman_education
+        icon = GFX_goal_generic_propaganda
+        prerequisite = { focus = LBA_secure_italian_garrisons }
+        relative_position_id = LBA_secure_italian_garrisons
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = { add_stability = 0.03 }
+    }
+
+    focus = {
+        id = LBA_enforce_fascist_order
+        icon = GFX_goal_anti_comintern_pact
+        prerequisite = { focus = LBA_secure_italian_garrisons }
+        relative_position_id = LBA_secure_italian_garrisons
+        x = -1
+        y = 2
+        cost = 10
+        completion_reward = { add_war_support = 0.03 }
+    }
+
+    focus = {
+        id = LBA_italian_ambitions_africa
+        icon = GFX_goal_generic_claims
+        prerequisite = { focus = LBA_enforce_fascist_order }
+        relative_position_id = LBA_enforce_fascist_order
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = { add_political_power = 50 }
+    }
+
+    focus = {
+        id = LBA_colonial_mechanization
+        icon = GFX_goal_generic_tanks
+        prerequisite = { focus = LBA_secure_italian_garrisons }
+        relative_position_id = LBA_secure_italian_garrisons
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_tech_bonus = {
+                category = armor
+                bonus = 0.5
+                uses = 1
+            }
+        }
+    }
+
+    focus = {
+        id = LBA_integrated_colonial_admin
+        icon = GFX_goal_generic_government
+        prerequisite = { focus = LBA_roman_education }
+        relative_position_id = LBA_roman_education
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = { add_stability = 0.04 }
+    }
+
+    focus = {
+        id = LBA_join_italian_wars
+        icon = GFX_goal_generic_war
+        prerequisite = { focus = LBA_italian_ambitions_africa }
+        relative_position_id = LBA_italian_ambitions_africa
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = { add_war_support = 0.05 }
+    }
+
+    ### =============================
+    ### LIBYAN NATIONALIST PATH (RIGHT)
+    ### =============================
+
+    focus = {
+        id = LBA_local_fascist_cells
+        icon = GFX_goal_generic_fascism
+        prerequisite = { focus = LBA_question_of_rule }
+        relative_position_id = LBA_question_of_rule
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = { add_political_power = 40 }
+    }
+
+    focus = {
+        id = LBA_ignite_nationalist_sentiment
+        icon = GFX_goal_generic_propaganda
+        prerequisite = { focus = LBA_local_fascist_cells }
+        relative_position_id = LBA_local_fascist_cells
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = { add_stability = 0.03 }
+    }
+
+    focus = {
+        id = LBA_form_fascist_party
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = LBA_ignite_nationalist_sentiment }
+        relative_position_id = LBA_ignite_nationalist_sentiment
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.1
+            }
+        }
+    }
+
+    focus = {
+        id = LBA_anti_italian_protests
+        icon = GFX_goal_generic_coup
+        prerequisite = { focus = LBA_form_fascist_party }
+        relative_position_id = LBA_form_fascist_party
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = { add_war_support = 0.03 }
+    }
+
+    focus = {
+        id = LBA_military_organization
+        icon = GFX_goal_generic_army_doctrine
+        prerequisite = { focus = LBA_form_fascist_party }
+        relative_position_id = LBA_form_fascist_party
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_tech_bonus = {
+                category = infantry_weapons
+                bonus = 0.5
+                uses = 1
+            }
+        }
+    }
+
+    focus = {
+        id = LBA_secure_tribes
+        icon = GFX_goal_generic_improve_relations
+        prerequisite = { focus = LBA_anti_italian_protests }
+        relative_position_id = LBA_anti_italian_protests
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = { add_stability = 0.04 }
+    }
+
+    focus = {
+        id = LBA_arm_militias
+        icon = GFX_goal_generic_small_arms
+        prerequisite = { focus = LBA_military_organization }
+        relative_position_id = LBA_military_organization
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = { add_war_support = 0.04 }
+    }
+
+    focus = {
+        id = LBA_expel_italian_officials
+        icon = GFX_goal_generic_purge
+        prerequisite = { focus = LBA_anti_italian_protests }
+        relative_position_id = LBA_anti_italian_protests
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = { add_political_power = 50 }
+    }
+
+    focus = {
+        id = LBA_claim_north_africa
+        icon = GFX_goal_generic_territory_or_war
+        prerequisite = { focus = LBA_expel_italian_officials }
+        relative_position_id = LBA_expel_italian_officials
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = { add_state_claim = 448 }
+    }
+
+    focus = {
+        id = LBA_united_libya
+        icon = GFX_goal_generic_diplomacy
+        prerequisite = { focus = LBA_secure_tribes }
+        relative_position_id = LBA_secure_tribes
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = { add_stability = 0.05 }
+    }
+
+    focus = {
+        id = LBA_independent_fascist_state
+        icon = GFX_goal_generic_fascism
+        prerequisite = { focus = LBA_united_libya }
+        relative_position_id = LBA_united_libya
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            set_politics = { ruling_party = fascism }
+        }
+    }
+
+    focus = {
+        id = LBA_native_industry_rebuild
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = LBA_united_libya }
+        relative_position_id = LBA_united_libya
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_building_construction = {
+                type = industrial_complex
+                amount = 2
+            }
+        }
+    }
+}
+
+

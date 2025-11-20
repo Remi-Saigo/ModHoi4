@@ -735,7 +735,7 @@ set_convoys = 200
 
 set_autonomy = {
 		target = LBA
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_dominion
 	}
 
 set_politics = {
