@@ -1,8 +1,10 @@
-version="0.0.1"
+version="1.0"
 tags={
+	"Alternative History"
 	"Balance"
 	"Fixes"
-	"Utilities"
+	"Gameplay"
 }
-name="BoostModVanilla+"
-supported_version="1.16.10"
+name="BMV+"
+supported_version="1.17.0"
+remote_file_id="3609219548"
