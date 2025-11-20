@@ -7064,8 +7064,8 @@ focus_tree = {
 		}
 		bypass = {
 			OR = {
-				NZL = { exists = no }
-				NZL = {
+				EGY = { exists = no }
+				EGY = {
 					custom_trigger_tooltip = {
 						tooltip = construction_effort_tt
 						all_owned_state = {
@@ -7586,7 +7586,7 @@ focus_tree = {
 	focus = {
 		id = ENG_imperial_conference
 		prerequisite = { focus = uk_canada_focus }
-		prerequisite = { focus = uk_new_zealand_focus }
+		prerequisite = { focus = uk_egypt_focus }
 		prerequisite = { focus = uk_south_africa_focus }
 
 		allow_branch = {
@@ -7632,7 +7632,7 @@ focus_tree = {
 					exists = no
 				}
 			}
-			NZL = {
+			EGY = {
 				OR = {
 					AND = {
 						is_subject_of = ENG
@@ -7648,7 +7648,7 @@ focus_tree = {
 						is_core_of = CAN
 						is_core_of = SAF
 						is_core_of = AST
-						is_core_of = NZL
+						is_core_of = EGY
 					}
 					NOT = { state = 331 }
 					OWNER = {
@@ -7658,7 +7658,7 @@ focus_tree = {
 								tag = CAN
 								tag = SAF
 								tag = AST
-								tag = NZL
+								tag = EGY
 							}
 						}
 					}
@@ -7683,7 +7683,7 @@ focus_tree = {
 			AST = {
 				exists = no
 			}
-			NZL = {
+			EGY = {
 				exists = no
 			}
 			NOT = {
@@ -7693,7 +7693,7 @@ focus_tree = {
 						is_core_of = CAN
 						is_core_of = SAF
 						is_core_of = AST
-						is_core_of = NZL
+						is_core_of = EGY
 					}
 					OWNER = {
 						NOT = { tag = ENG }
@@ -7708,7 +7708,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		relative_position_id = uk_new_zealand_focus
+		relative_position_id = uk_egypt_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -8290,18 +8290,18 @@ focus_tree = {
 				}
 				add_core_of = ENG
 			}
-			NZL = {
+			EGY = {
 				every_unit_leader = {
 					set_nationality = ENG
 				}
 			}
 			annex_country = {
-			    target = NZL
+			    target = EGY
 			    transfer_troops = yes
 			}
 			every_state = {
 				limit = {
-					is_core_of = NZL
+					is_core_of = EGY
 				}
 				add_core_of = ENG
 			}
