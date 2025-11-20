@@ -1,3 +1,6 @@
+
+axis_decision = {
+    
 axis_mineur_decisions = {
 
         ### ROUMANIE ###
@@ -107,3 +110,4 @@ libya_join_axis = {
         add_to_faction = GER
     }
 }   }
+}   

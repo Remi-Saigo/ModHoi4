@@ -10,3 +10,8 @@ ITA_decision = {
 	icon = GFX_decision_category_ITA_colonial_management
     priority = 50
 }
+axis_decision = {	
+	icon = GFX_decision_category_ger_reichskommissariats
+	priority = 100
+}
+
