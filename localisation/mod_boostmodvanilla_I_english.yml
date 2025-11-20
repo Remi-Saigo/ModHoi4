@@ -1,0 +1,52 @@
+﻿l_english:
+
+Mod_decision: "BoostModVanilla+"
+mod_decision_desc: "Custom decisions added by the BoostModVanilla+ mod."
+
+add_one_research_slot: "Add a Research Slot"
+add_one_research_slot_desc: "Allows you to add a new slot for scientific research."
+
+# MIN - IDEAS
+Performances_AI: "Optimized Performance"
+Performances_AI_desc: "Optimization of AI performance for better gameplay."
+
+peace_training: "Peace Training"
+peace_training_desc: "Experience bonus and reduced training time during peacetime."
+
+ST_STATE_MARK_FOR_TRANSFER: "§HMark State for Transfer§!\nMarks the selected state so it can be transferred."
+ST_STATE_UNMARK_FOR_TRANSFER: "§HUnmark State§!\nRemoves the mark from the selected state."
+
+mark_state_yes: "State marked"
+mark_state_no: "\n §RMarked!§!"
+
+MARK_ALL_STATES: "§HMark All States§!\n\nMarks all states of this country."
+MARK_ALL_STATES_DELAYED: ""
+
+MARK_COLONIES: "§HMark Colonies§!\n\nMarks all colonial states of this country."
+MARK_COLONIES_DELAYED: ""
+
+CLEAR_ALL_MARKINGS: "§HClear All Marks§!\n\nRemoves all marks on the world."
+CLEAR_ALL_MARKINGS_DELAYED: ""
+
+AWARD_STATES: "§HTransfer States§!\n\nTransfers all marked states to this country."
+AWARD_STATES_DELAYED: "§RUnable to transfer all owned states!§"
+
+ST_TOOLTIP_on: "§HEnable State Transfer Tool§!"
+ST_TOOLTIP_off: "§HDisable State Transfer Tool§!"
+transfer_states_on: "State Transfer Tool: £trigger_no"
+transfer_states_off: "State Transfer Tool: £trigger_yes"
+
+mark_status_marked: "     State unmarked"
+mark_status_unmarked: "     State marked"
+
+RULE_ALLOW_SUBJECT_TRANSFERS: "Transfer States Between AI Puppets"
+RULE_ALLOW_SUBJECT_TRANSFERS_FREE_DESC: "All puppet types"
+RULE_ALLOW_SUBJECT_TRANSFERS_LOW_AUTONOMY_ONLY_DESC: "Only low-autonomy puppets (< colony)"
+RULE_ALLOW_SUBJECT_TRANSFERS_BLOCKED_DESC: "Block puppet state transfers"
+
+RULE_USE_NEW_TOOL: "Use the new version of the mod"
+
+# Focus
+
+uk_egypt_focus: "Develop Egypt"
+uk_egypt_focus_desc: "Egypt maintains a strong connection with our nation and has warned against the fascist threat. Their contribution in the event of war is certain, and we should help them prepare accordingly."
