@@ -1,6 +1,4 @@
-decisions = {
 
-    axis_mineur_decisions = {
 
         ### ROUMANIE ###
         romania_join_axis = {
