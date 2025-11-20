@@ -23,7 +23,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1750 }
+	continuous_focus_position = { x = 200 y = 1750 }
 
 	shared_focus = HABSBURG_part_of_something_bigger
 
@@ -143,7 +143,7 @@ focus_tree = {
 		icon = GFX_focus_rom_handle_king
 		#prerequisite = { focus = }
 		mutually_exclusive = { focus = wuw_HUN_end_the_regency focus = wuw_HUN_end_the_white_terror }
-		x = 16
+		x = -4 
 		y = 0
 		relative_position_id = wuw_HUN_end_the_regency
 
@@ -151,55 +151,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 15
-		}
-
-		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_end_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-			}
-		}
-
-		offset = {
-			x = -22
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_continue_the_regency
-			}
-		}
-
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_strengthen_horthys_reign
-			}
-		}
-
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_undermine_the_admiral
-			}
 		}
 
 		available = {
@@ -260,16 +211,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_regency }
-			}
+			always = no
 		}
 
 		offset = {
@@ -634,17 +576,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_reinstate_the_pragmatic_sanction }
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-			}
+			always = no
 		}
 
 		offset = {
@@ -781,18 +713,7 @@ focus_tree = {
 		cost = 5
 
 		allow_branch = {
-			has_dlc = "La Resistance"
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-				NOT = { has_completed_focus = wuw_HUN_abide_by_the_little_ententes_stipulations }
-			}
+			always = no
 		}
 
 		offset = {
@@ -915,18 +836,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_the_old_habsburg_king }
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-				NOT = { has_completed_focus = wuw_HUN_abide_by_the_little_ententes_stipulations }
-			}
+			always = no
 		}
 
 		available = {
@@ -1008,18 +918,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_invite_otto_to_the_throne }
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-				NOT = { has_completed_focus = wuw_HUN_abide_by_the_little_ententes_stipulations }
-			}
+			always = no
 		}
 
 		available = {
@@ -5475,19 +5374,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-				NOT = { has_completed_focus = wuw_HUN_elect_a_democratic_king }
-				NOT = { has_completed_focus = wuw_HUN_elect_a_fascist_king }
-				NOT = { has_completed_focus = wuw_HUN_reinstate_the_pragmatic_sanction }
-			}
+			always = no
 		}
 
 		offset = {
@@ -5567,19 +5454,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-				NOT = { has_completed_focus = wuw_HUN_establishing_a_new_dynasty }
-				NOT = { has_completed_focus = wuw_HUN_elect_a_fascist_king }
-				NOT = { has_completed_focus = wuw_HUN_reinstate_the_pragmatic_sanction }
-			}
+			always = no
 		}
 
 		available = {
@@ -5790,19 +5665,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-				NOT = { has_completed_focus = wuw_HUN_establishing_a_new_dynasty }
-				NOT = { has_completed_focus = wuw_HUN_elect_a_democratic_king }
-				NOT = { has_completed_focus = wuw_HUN_reinstate_the_pragmatic_sanction }
-			}
+			always = no
 		}
 
 		offset = {
@@ -5901,6 +5764,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 15
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		available = {
@@ -7647,7 +7514,7 @@ focus_tree = {
 		icon = GFX_focus_HUN_strengthen_horthys_reign
 		prerequisite = { focus = wuw_HUN_continue_the_regency }
 		mutually_exclusive = { focus = wuw_HUN_undermine_the_admiral }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = wuw_HUN_continue_the_regency
 
@@ -7655,32 +7522,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 15
-		}
-
-		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_end_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-				NOT = { has_completed_focus = wuw_HUN_undermine_the_admiral }
-			}
-		}
-
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_strengthen_horthys_reign
-			}
 		}
 
 		available = {
@@ -7757,17 +7598,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_end_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_white_terror }
-				NOT = { has_completed_focus = wuw_HUN_strengthen_horthys_reign }
-			}
+			always = no
 		}
 
 		offset = {
@@ -7838,8 +7669,8 @@ focus_tree = {
 		icon = GFX_focus_HUN_reestablish_the_rongyos_garda
 		prerequisite = { focus = wuw_HUN_strengthen_horthys_reign focus = wuw_HUN_undermine_the_admiral }
 		#mutually_exclusive = { focus = wuw_HUN_undermine_the_admiral }
-		x = 2
-		y = 2
+		x = -2
+		y = 1
 		relative_position_id = wuw_HUN_strengthen_horthys_reign
 
 		cost = 10
@@ -7879,7 +7710,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_manpower = 16000
+			add_manpower = 96000
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -7963,7 +7794,7 @@ focus_tree = {
 		icon = GFX_focus_HUN_strenghten_the_order_of_vitez
 		prerequisite = { focus = wuw_HUN_strengthen_horthys_reign }
 		#mutually_exclusive = { focus = wuw_HUN_undermine_the_admiral }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = wuw_HUN_strengthen_horthys_reign
 
@@ -8009,7 +7840,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_dictatorship
 		prerequisite = { focus = wuw_HUN_strengthen_horthys_reign }
 		#mutually_exclusive = { focus = wuw_HUN_undermine_the_admiral }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = wuw_HUN_strengthen_horthys_reign
 
@@ -8084,11 +7915,11 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_political_power = 75
+			add_political_power = 100
 
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.1
+				popularity = 0.25
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -8140,12 +7971,12 @@ focus_tree = {
 
 			add_popularity = {
 				ideology = communism
-				popularity = -0.1
+				popularity = -0.15
 			}
 
 			add_popularity = {
 				ideology = democratic
-				popularity = -0.1
+				popularity = -0.15
 			}
 
 		}
@@ -8182,7 +8013,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_stability = 0.05
+			add_stability = 0.1
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -8317,6 +8148,8 @@ focus_tree = {
 		completion_reward = {
 
 			add_threat = 1
+
+			add_war_support = 0.05
 
 			IF = {
 				limit = {
@@ -8757,7 +8590,7 @@ focus_tree = {
 		icon = GFX_focus_HUN_the_turul_association
 		prerequisite = { focus = wuw_HUN_absolute_rule_of_the_national_unity_party focus = wuw_HUN_government_of_national_unity focus = wuw_HUN_spur_on_the_trianon_trauma focus = wuw_HUN_elect_a_fascist_king }
 		#mutually_exclusive = { focus = wuw_HUN_government_of_national_unity }
-		x = -3
+		x = 0
 		y = 1
 		relative_position_id = wuw_HUN_government_of_national_unity
 
@@ -8833,7 +8666,7 @@ focus_tree = {
 		prerequisite = { focus = wuw_HUN_the_turul_association }
 		#mutually_exclusive = { focus = wuw_HUN_government_of_national_unity }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = wuw_HUN_the_turul_association
 
 		cost = 10
@@ -9628,11 +9461,11 @@ focus_tree = {
 		id = wuw_HUN_demand_croatian_reintigration
 		icon = GFX_focus_YUG_devolved_croatia
 		prerequisite = { focus = wuw_HUN_reaffirm_territorial_claims }
-		prerequisite = { focus = wuw_HUN_wherever_the_cross_points }
+		prerequisite = { focus = wuw_HUN_act_of_defense }
 		#mutually_exclusive = { focus = wuw_HUN_government_of_national_unity }
-		x = 3
-		y = 4
-		relative_position_id = wuw_HUN_wherever_the_cross_points
+		x = 4
+		y = 1
+		relative_position_id = wuw_HUN_reaffirm_territorial_claims
 
 		will_lead_to_war_with = YUG
 		will_lead_to_war_with = CRO
@@ -12113,18 +11946,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_restore_the_socialist_federative_republic }
-				NOT = { has_completed_focus = wuw_HUN_establish_the_second_republic }
-			}
+			always = no
 		}
 
 		available = {
@@ -12223,18 +12045,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_join_the_comintern }
-				NOT = { has_completed_focus = wuw_HUN_establish_the_second_republic }
-			}
+			always = no
 		}
 
 		offset = {
@@ -12328,18 +12139,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = wuw_HUN_continue_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_end_the_regency }
-				NOT = { has_completed_focus = wuw_HUN_restore_the_socialist_federative_republic }
-				NOT = { has_completed_focus = wuw_HUN_join_the_comintern }
-			}
+			always = no
 		}
 
 		offset = {
@@ -14851,179 +14651,11 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		#prerequisite = { focus = wuw_HUN_a_revolutionary_greater_hungary }
 		mutually_exclusive = { focus = wuw_HUN_economic_intervention }
-		x = 45
+		x = 6
 		y = 0
 		relative_position_id = wuw_HUN_end_the_regency
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
-
-		offset = {
-			x = -25
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_end_the_regency
-			}
-		}
-
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_reinstate_the_pragmatic_sanction
-			}
-		}
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_invite_otto_to_the_throne
-			}
-		}
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_the_old_habsburg_king
-			}
-		}
-
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_abide_by_the_little_ententes_stipulations
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_establishing_a_new_dynasty
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_elect_a_democratic_king
-			}
-		}
-
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_elect_a_fascist_king
-			}
-		}
-
-		offset = {
-			x = -40
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_continue_the_regency
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_strengthen_horthys_reign
-			}
-		}
-
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_end_the_white_terror
-			}
-		}
-
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_establish_the_second_republic
-			}
-		}
-
-		offset = {
-			x = -12
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_join_the_comintern
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_restore_the_socialist_federative_republic
-			}
-		}
 
 		cost = 10
 
@@ -15044,15 +14676,15 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 150
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -15064,177 +14696,9 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		#prerequisite = { focus = wuw_HUN_a_revolutionary_greater_hungary }
 		mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
-		x = 47
+		x = 8
 		y = 0
 		relative_position_id = wuw_HUN_end_the_regency
-
-		offset = {
-			x = -25
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_end_the_regency
-			}
-		}
-
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_reinstate_the_pragmatic_sanction
-			}
-		}
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_invite_otto_to_the_throne
-			}
-		}
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_the_old_habsburg_king
-			}
-		}
-
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_abide_by_the_little_ententes_stipulations
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_establishing_a_new_dynasty
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_elect_a_democratic_king
-			}
-		}
-
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_elect_a_fascist_king
-			}
-		}
-
-		offset = {
-			x = -40
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_continue_the_regency
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_strengthen_horthys_reign
-			}
-		}
-
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_end_the_white_terror
-			}
-		}
-
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_establish_the_second_republic
-			}
-		}
-
-		offset = {
-			x = -12
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_join_the_comintern
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_restore_the_socialist_federative_republic
-			}
-		}
 
 		cost = 10
 
@@ -15264,7 +14728,7 @@ focus_tree = {
 		icon = GFX_focus_secret_rearmament
 		#prerequisite = { focus = wuw_HUN_a_revolutionary_greater_hungary }
 		#mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
-		x = 55
+		x = 16
 		y = 0
 		relative_position_id = wuw_HUN_end_the_regency
 
@@ -15274,174 +14738,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
-		}
-
-		offset = {
-			x = -25
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_end_the_regency
-			}
-		}
-
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_reinstate_the_pragmatic_sanction
-			}
-		}
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_invite_otto_to_the_throne
-			}
-		}
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_the_old_habsburg_king
-			}
-		}
-
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_abide_by_the_little_ententes_stipulations
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_establishing_a_new_dynasty
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_elect_a_democratic_king
-			}
-		}
-
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_elect_a_fascist_king
-			}
-		}
-
-		offset = {
-			x = -40
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_continue_the_regency
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_strengthen_horthys_reign
-			}
-		}
-
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_end_the_white_terror
-			}
-		}
-
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_establish_the_second_republic
-			}
-		}
-
-		offset = {
-			x = -12
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_join_the_comintern
-			}
-		}
-
-		offset = {
-			x = -6
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = wuw_HUN_restore_the_socialist_federative_republic
-			}
 		}
 
 		available = {
@@ -15765,10 +15061,10 @@ focus_tree = {
 					}
 				}
 				43 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -15835,15 +15131,15 @@ focus_tree = {
 					}
 				}
 				43 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					add_resource = {
 						type = steel
-						amount = 6
+						amount = 16
 					}
 				}
 				ELSE = {
@@ -15958,7 +15254,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_political_power = 50
+			add_political_power = 75
 
 			add_tech_bonus = {
 				name = HUN_announce_the_gyor_program
@@ -17033,7 +16329,7 @@ focus_tree = {
 					}
 					add_resource = {
 						type = steel
-						amount = 2
+						amount = 12
 					}
 				}
 			}
@@ -17292,10 +16588,10 @@ focus_tree = {
 					}
 				}
 				43 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -17341,7 +16637,7 @@ focus_tree = {
 			43 = {
 				add_resource = {
 					type = aluminium
-					amount = 14
+					amount = 24
 				}
 			}
 		}
