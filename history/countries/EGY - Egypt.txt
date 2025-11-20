@@ -1,4 +1,4 @@
-﻿capital = 448
+﻿capital = 907
 
 # Starting tech
 set_technology = {
@@ -9,9 +9,18 @@ set_technology = {
 	tech_trucks = 1
 }
 
+IF = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+
 if = {
 	limit = {
-		NOT = { has_dlc = "No Step Back" }
+		NOT = {
+			has_dlc = "No Step Back"
+		}
 	}
 	set_technology = {
 		gwtank = 1
@@ -19,6 +28,14 @@ if = {
 }
 
 set_convoys = 20
+
+set_cosmetic_tag = EGY_brit_puppet
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
 
 1939.1.1 = {
 
@@ -40,8 +57,8 @@ set_convoys = 20
 		tech_support = 1
 		tech_recon = 1
 		support_weapons = 1
-		tech_trucks = 1
 		gw_artillery = 1
+		tech_trucks = 1
 
 		#doctrines
 		air_superiority = 1
@@ -72,23 +89,24 @@ set_convoys = 20
 	}
 }
 
+
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 1
-	fascism = 90
-	communism = 1
-	neutrality = 8
+	democratic = 16
+	fascism = 7
+	communism = 2
+	neutrality = 75
 }
 
 create_country_leader = {
-	name = "Bashir es Sadawi"
+	name = "Muhammad Naguib"
 	desc = ""
-	picture = GFX_portrait_Bashir_es_Sadawi
+	picture = GFX_portrait_Muhammad_Naguib
 	ideology = liberalism
 	traits = {
 		#
@@ -96,9 +114,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ettore Bastico"
+	name = "Ahmed Husayn"
 	desc = ""
-	picture = GFX_portrait_Ettore_Bastico
+	picture = GFX_portrait_Ahmed_Husayn
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -106,9 +124,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Idris Senussi"
+	name = "Farouk Muhammad Ali"
 	desc = ""
-	picture = GFX_portrait_Idris_Senussi
+	picture = "GFX_portrait_egy_faud_i"
 	ideology = despotism
 	traits = {
 		#
@@ -116,9 +134,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hassan as-Senussi"
+	name = "Hosni al-Arabi"
 	desc = ""
-	picture = GFX_portrait_Hassan_as_Senussi
+	picture = GFX_portrait_Hosni_al_Arabi
 	ideology = leninism
 	traits = {
 		#
