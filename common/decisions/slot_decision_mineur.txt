@@ -1,0 +1,111 @@
+decisions = {
+
+    axis_mineur_decisions = {
+
+        ### ROUMANIE ###
+        romania_join_axis = {
+            icon = generic_alliance
+
+            allowed = {
+                tag = ROM
+                NOT = { is_in_faction = yes }
+                has_government = fascism
+                independent = yes
+                NOT = { has_war = yes }
+            }
+
+            visible = {
+                GER = { exists = yes }
+                GER = { is_faction_leader = yes }
+                ROM = {is_ai = no}
+            }
+
+            target = GER
+            cost = 0
+            days_remove = 1
+
+            remove_effect = {
+                add_to_faction = GER
+            }
+            
+        }
+### BULGARIE ###
+bulgaria_join_axis = {
+    icon = generic_alliance
+
+    allowed = {
+        tag = BUL
+        NOT = { is_in_faction = yes }
+        has_government = fascism
+        independent = yes
+        NOT = { has_war = yes }
+    }
+
+    visible = {
+        GER = { exists = yes }
+        GER = { is_faction_leader = yes }
+        BUL = { is_ai = no }
+    }
+
+    target = GER
+    cost = 0
+    days_remove = 1
+
+    remove_effect = {
+        add_to_faction = GER
+    }
+}
+
+### HONGRIE ###
+hungary_join_axis = {
+    icon = generic_alliance
+
+    allowed = {
+        tag = HUN
+        NOT = { is_in_faction = yes }
+        has_government = fascism
+        independent = yes
+        NOT = { has_war = yes }
+    }
+
+    visible = {
+        GER = { exists = yes }
+        GER = { is_faction_leader = yes }
+        HUN = { is_ai = no }
+    }
+
+    target = GER
+    cost = 0
+    days_remove = 1
+
+    remove_effect = {
+        add_to_faction = GER
+    }
+}
+
+### LIBYE ###
+libya_join_axis = {
+    icon = generic_alliance
+
+    allowed = {
+        tag = LBA
+        NOT = { is_in_faction = yes }
+        has_government = fascism
+        independent = yes
+        NOT = { has_war = yes }
+    }
+
+    visible = {
+        GER = { exists = yes }
+        GER = { is_faction_leader = yes }
+        LBA = { is_ai = no }
+    }
+
+    target = GER
+    cost = 0
+    days_remove = 1
+
+    remove_effect = {
+        add_to_faction = GER
+    }
+}
