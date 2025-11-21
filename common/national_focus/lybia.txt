@@ -50,7 +50,7 @@ focus_tree = {
 		id = LBA_loyalty_to_rome
 		icon = GFX_goal_generic_allies_build_infantry
 		
-		x = -6
+		x = -8
 		y = 1
 		relative_position_id = LBA_future_of_libya
 		
@@ -154,7 +154,7 @@ focus_tree = {
 		id = LBA_tripoli_development
 		icon = GFX_goal_generic_construct_infrastructure
 		
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = LBA_italian_investments
 		
@@ -206,7 +206,7 @@ focus_tree = {
 		id = LBA_benghazi_port
 		icon = GFX_goal_generic_construct_naval_dockyard
 		
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = LBA_italian_settlers
 		
@@ -358,7 +358,7 @@ focus_tree = {
 		id = LBA_gateway_to_africa
 		icon = GFX_goal_generic_improve_relations
 		
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = LBA_rome_military_cooperation
 		
@@ -387,7 +387,7 @@ focus_tree = {
 		id = LBA_libyan_independence
 		icon = GFX_goal_generic_demand_territory
 		
-		x = 6
+		x = 8
 		y = 1
 		relative_position_id = LBA_future_of_libya
 		
@@ -488,7 +488,7 @@ focus_tree = {
 		id = LBA_senussi_support
 		icon = GFX_goal_generic_allies_build_infantry
 		
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = LBA_libyan_nationalism
 		
@@ -530,7 +530,7 @@ focus_tree = {
 		id = LBA_guerrilla_warfare
 		icon = GFX_goal_generic_cavalry
 		
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = LBA_resist_occupation
 		
@@ -554,7 +554,7 @@ focus_tree = {
 		id = LBA_tribal_confederations
 		icon = GFX_goal_generic_military_sphere
 		
-		x = -1
+		x = 2
 		y = 1
 		relative_position_id = LBA_senussi_support
 		
@@ -595,7 +595,7 @@ focus_tree = {
 		id = LBA_desert_warriors
 		icon = GFX_goal_generic_army_doctrines
 		
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = LBA_guerrilla_warfare
 		
@@ -720,7 +720,7 @@ focus_tree = {
 		id = LBA_oil_exploitation
 		icon = GFX_goal_generic_oil_refinery
 		
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = LBA_economic_planning
 		
@@ -777,7 +777,7 @@ focus_tree = {
 		id = LBA_agricultural_reforms
 		icon = GFX_goal_generic_positive_trade_relations
 		
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = LBA_economic_planning
 		
@@ -797,7 +797,7 @@ focus_tree = {
 		id = LBA_expand_oil_fields
 		icon = GFX_goal_generic_construction2
 		
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = LBA_oil_exploitation
 		
@@ -849,7 +849,7 @@ focus_tree = {
 		id = LBA_expand_agriculture
 		icon = GFX_goal_generic_trade
 		
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = LBA_agricultural_reforms
 		
@@ -929,7 +929,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		
 		x = 0
-		y = 8
+		y = 7
 		relative_position_id = LBA_future_of_libya
 		
 		cost = 10
@@ -1111,40 +1111,18 @@ focus_tree = {
 	### BRANCHE NAVALE ET AÉRIENNE
 	##############################################
 
+
 	focus = {
-		id = LBA_coastal_defense_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		id = LBA_submarine_warfare
+		icon = GFX_goal_generic_navy_submarine
 		
-		x = -3
+		x = 0
 		y = 1
 		relative_position_id = LBA_industrial_expansion
 		
 		cost = 10
 		
 		prerequisite = { focus = LBA_industrial_expansion }
-		
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = LBA_coastal_defense_navy
-				bonus = 1.0
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-
-	focus = {
-		id = LBA_submarine_warfare
-		icon = GFX_goal_generic_navy_submarine
-		
-		x = -3
-		y = 1
-		relative_position_id = LBA_coastal_defense_navy
-		
-		cost = 10
-		
-		prerequisite = { focus = LBA_coastal_defense_navy }
 		
 		completion_reward = {
 			navy_experience = 30
@@ -1161,7 +1139,7 @@ focus_tree = {
 		id = LBA_air_force_development
 		icon = GFX_goal_generic_build_airforce
 		
-		x = 3
+		x = 0
 		y = 1
 		relative_position_id = LBA_trade_hub
 		
