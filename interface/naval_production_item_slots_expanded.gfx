@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_naval_production_item_bg_strip_expanded"
+		textureFile = "gfx//interface//naval_production_item_slots_strip_expanded.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		noOfFrames = 3
+	}
+}
