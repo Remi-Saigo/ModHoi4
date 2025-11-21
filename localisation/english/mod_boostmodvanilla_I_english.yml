@@ -10,6 +10,8 @@ add_one_research_slot_desc: "Allows you to add a new slot for scientific researc
 
   ### Axis minor decisions ###
 
+axis_mineur_decisions: "Minor the Axis"
+
   ### ROMANIA ###
 romania_join_axis: "Join the Axis"
 romania_join_axis_desc: "Romania is considering joining the Axis to strengthen its position in Europe and secure its strategic interests."
