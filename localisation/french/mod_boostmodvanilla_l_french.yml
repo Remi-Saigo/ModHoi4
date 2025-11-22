@@ -9,26 +9,21 @@ add_one_research_slot: "Ajouter un emplacement de recherche"
 add_one_research_slot_desc: "Permet d'ajouter un nouvel emplacement pour la recherche scientifique."
 
  ### Décision pour les mineurs axe###
-axis_mineur_decisions: "Mineurs de l’Axe"
+axis_mineur_decisions_category: "Rejoindre l’Axe"
 
-  ### ROUMANIE ###
-romania_join_axis: "Rejoindre l’Axe"
-romania_join_axis_desc: "La Roumanie envisage d’entrer dans l’Axe afin de renforcer sa position en Europe et d’assurer sa sécurité stratégique."
+minor_join_axe: "Rejoindre l’Axe"
 
-  ### BULGARIE ### 
-bulgaria_join_axis: "Rejoindre l’Axe" 
-bulgaria_join_axis_desc: "La Bulgarie peut rejoindre l’alliance allemande pour garantir son influence régionale et son avenir politique." 
-
+ ### ROUMANIE ###
+GER_puppet_ROM: "Soumettre la Roumanie"
+GER_puppet_ROM_desc: "La Roumanie est un pays stratégique en Europe de l'Est, avec des ressources importantes et une position géographique clé. En la soumettant, nous renforçons notre influence dans la région et consolidons notre pouvoir face aux menaces potentielles."
+  
+### BULGARIE ### 
+GER_puppet_BUL: "Soumettre la Bulgarie" 
+GER_puppet_BUL_desc: "La Bulgarie, en tant que nation des Balkans, occupe une position stratégique cruciale. En la soumettant, nous renforçons notre influence dans cette région instable et assurons un contrôle plus étroit sur les routes commerciales et les ressources vitales."
  
   ### HONGRIE ###  
-hungary_join_axis: "Rejoindre l’Axe" 
-hungary_join_axis_desc: "La Hongrie souhaite se rapprocher de l’Allemagne et rejoindre l’Axe afin d’accroître sa puissance militaire et diplomatique." 
-
-  ### LIBYE ###
-libya_join_axis: "Rejoindre l Axe"  
-libya_join_axis_desc: "La Libye peut intégrer l’Axe pour renforcer son rôle stratégique en Afrique du Nord et soutenir l’effort de guerre."
-
-
+GER_puppet_HUN: "Soumettre la Hongrie" 
+GER_puppet_HUN_desc: "La Hongrie, située au cœur de l'Europe centrale, est une nation clé pour notre expansion. En la soumettant, nous consolidons notre pouvoir dans la région et renforçons notre position face aux puissances rivales."
 
 # MIN - IDEAS
 Performances_AI: "Performances optimisées"
