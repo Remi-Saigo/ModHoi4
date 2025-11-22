@@ -4,6 +4,8 @@ state = {
 	manpower = 3971400 # was 4461400
 	resources = {
 		oil = 50 # was: 70
+		steel = 10 # was: 15
+		coal = 40 # initial distribution
 	}
 
 	state_category = megalopolis

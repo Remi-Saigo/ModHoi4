@@ -6,6 +6,10 @@ state={
 	
 	state_category = megalopolis
 
+	resources = {
+		coal = 50
+	}
+
 	history={
 		owner = SOV
 		buildings = {

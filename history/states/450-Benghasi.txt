@@ -6,6 +6,11 @@ state={
 	
 	state_category = town
 
+	resources={
+		aluminium = 2
+		coal = 30 # initial distribution
+	}
+
 	history={
 		owner = LBA
 		

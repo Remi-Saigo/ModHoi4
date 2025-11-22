@@ -5,6 +5,11 @@ state = {
 
 	state_category = 	metropolis
 
+	resources={
+		chromium = 10
+		coal = 40 # initial distribution
+	}
+
 	history = {
 
 		owner = SAF

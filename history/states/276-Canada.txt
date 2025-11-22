@@ -4,6 +4,11 @@ state = {
 	manpower = 3117017
 	
 	state_category = 	megalopolis
+
+	resources={
+		coal = 40 # initial distribution
+		chromium = 7
+	}
 	
 	history = {
 
