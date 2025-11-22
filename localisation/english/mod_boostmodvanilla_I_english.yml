@@ -8,25 +8,23 @@ add_one_research_slot: "Add a Research Slot"
 add_one_research_slot_desc: "Allows you to add a new slot for scientific research."
 
 
-  ### Axis minor decisions ###
+### Decision for Axis Minors ###
+axis_mineur_decisions_category: "Join the Axis"
 
-axis_mineur_decisions: "Minor the Axis"
+minor_join_axe: "Join the Axis"
 
-  ### ROMANIA ###
-romania_join_axis: "Join the Axis"
-romania_join_axis_desc: "Romania is considering joining the Axis to strengthen its position in Europe and secure its strategic interests."
+### ROMANIA ###
+GER_puppet_ROM: "Subjugate Romania"
+GER_puppet_ROM_desc: "Romania is a strategic country in Eastern Europe, with important resources and a key geographical position. By subjugating it, we strengthen our influence in the region and consolidate our power against potential threats."
 
-  ### BULGARIA ###
-bulgaria_join_axis: "Join the Axis"
-bulgaria_join_axis_desc: "Bulgaria may join the German-led alliance to ensure its regional influence and political future."
+### BULGARIA ###
+GER_puppet_BUL: "Subjugate Bulgaria"
+GER_puppet_BUL_desc: "Bulgaria, as a Balkan nation, occupies a crucial strategic position. By subjugating it, we reinforce our influence in this unstable region and ensure tighter control over vital trade routes and resources."
 
-  ### HUNGARY ###
-hungary_join_axis: "Join the Axis"
-hungary_join_axis_desc: "Hungary seeks a closer relationship with Germany and may join the Axis to increase its military and diplomatic strength."
+### HUNGARY ###
+GER_puppet_HUN: "Subjugate Hungary"
+GER_puppet_HUN_desc: "Hungary, located in the heart of Central Europe, is a key nation for our expansion. By subjugating it, we consolidate our power in the region and strengthen our position against rival powers."
 
-  ### LIBYA ###
-libya_join_axis: "Join the Axis"
-libya_join_axis_desc: "Libya may join the Axis to strengthen its strategic role in North Africa and support the war effort."
 
 # MIN - IDEAS
 Performances_AI: "Optimized Performance"
