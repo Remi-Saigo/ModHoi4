@@ -35,5 +35,13 @@ ideas = {
 				navy_fuel_consumption_factor = -0.99
 			}
 		}
+
+		FRA_entrepeneurship_BMV = {
+			 
+		}
+
+		FRA_the_young_school_BMV = {
+
+		}
     }
 }

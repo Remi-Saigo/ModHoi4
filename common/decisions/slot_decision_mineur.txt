@@ -1,135 +1,102 @@
 axis_mineur_decisions_category = {
-
-    minor_join_axe = {
-        icon = GFX_decision_hol_exchange_intelligence_data
-
-        visible = {
-
-	    	OR = {
-		    	tag = HUN
-	    		tag = BUL
-	    		tag = ROM
-	    	}
-	    	is_ai = no
-
-    	}
-
-	    allowed = {
-
-	    	OR = {
-	    		tag = HUN
-	    		tag = BUL
-	    		tag = ROM
-	    	}
-
-	    }
-
-        available = {
-
-            AND = {
-                tag = ROM
-                has_government = fascism
-            }
-            NOT = {
-                is_in_faction_with = GER
-            }
-            is_ai = no
-
-        }
-
-        complete_effect = {
-
-            GER = {
-                add_to_faction = root
-            }
-
-        }
-
-    }
-
-    GER_puppet_BUL = {
-        icon = GFX_decision_ger_reichskommissariats
-
-        visible = {
-            BUL = {
-                is_ai = yes
-            }
-            tag = GER
-        }
-
-        allowed = {
-           BUL = {
-                is_ai = yes
-            }
-            tag = GER 
-        }
-
-        fire_only_once = yes
-
-        complete_effect = {
-            set_autonomy = {
-                target = BUL
-                autonomy_state = autonomy_reichskommissariat
-            }
-        }
-    }
-
-    GER_puppet_ROM = {
-        icon = GFX_decision_ger_reichskommissariats
-
-        visible = {
-            ROM = {
-                is_ai = yes
-            }
-            tag = GER
-        }
-
-        allowed = {
-           ROM = {
-                is_ai = yes
-            }
-            tag = GER 
-        }
-
-        fire_only_once = yes
-
-        complete_effect = {
-            set_autonomy = {
-                target = ROM
-                autonomy_state = autonomy_reichskommissariat
-            }
-        }
-    }
+	minor_join_axe = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			OR = {
+				tag = HUN
+				tag = BUL
+				tag = ROM
+			}
+			is_ai = no
+		}
+		allowed = {
+			OR = {
+				tag = HUN
+				tag = BUL
+				tag = ROM
+			}
+		}
+		available = {
+			AND = {
+				tag = ROM
+				has_government = fascism
+			}
+			NOT = {
+				is_in_faction_with = GER
+			}
+			is_ai = no
+		}
+		complete_effect = {
+			GER = {
+				add_to_faction = root
+			}
+		}
+	}
+	GER_puppet_BUL = {
+		icon = GFX_decision_ger_reichskommissariats
+		visible = {
+			BUL = {
+				is_ai = yes
+			}
+			tag = GER
+		}
+		allowed = {
+			BUL = {
+				is_ai = yes
+			}
+			tag = GER
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_autonomy = {
+				target = BUL
+				autonomy_state = autonomy_reichskommissariat
+			}
+		}
+	}
+	GER_puppet_ROM = {
+		icon = GFX_decision_ger_reichskommissariats
+		visible = {
+			ROM = {
+				is_ai = yes
+			}
+			tag = GER
+		}
+		allowed = {
+			ROM = {
+				is_ai = yes
+			}
+			tag = GER
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_autonomy = {
+				target = ROM
+				autonomy_state = autonomy_reichskommissariat
+			}
+		}
+	}
 
     GER_puppet_HUN = {
-        icon = GFX_decision_ger_reichskommissariats
-
-        visible = {
-            HUN = {
-                is_ai = yes
-            }
-            tag = GER
-        }
-
-    allowed = {
-        tag = LBA
-        NOT = { is_in_faction = yes }
-        has_government = fascism
-        independent = yes
-        NOT = { has_war = yes }
-    }
-
-    visible = {
-        GER = { exists = yes }
-        GER = { is_faction_leader = yes }
-        LBA = { is_ai = no }
-    }
-
-    target = GER
-    cost = 0
-    days_remove = 1
-
-    remove_effect = {
-        add_to_faction = GER
-    }
+		icon = GFX_decision_ger_reichskommissariats
+		visible = {
+			HUN = {
+				is_ai = yes
+			}
+			tag = GER
+		}
+		allowed = {
+			HUN = {
+				is_ai = yes
+			}
+			tag = GER
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_autonomy = {
+				target = HUN
+				autonomy_state = autonomy_reichskommissariat
+			}
+		}
+	}
 }

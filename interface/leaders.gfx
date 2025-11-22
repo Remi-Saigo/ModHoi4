@@ -1,9 +1,9 @@
 spriteTypes = {
-
-spriteType = {
+	spriteType = {
 		name = "GFX_portrait_amorcast"
-		texturefile = "gfx/leaders/Tannou-Touva/portrait_amorcast.dds"
-		}}
+		texturefile = "gfx/leaders/CAN/portrait_amorcast.dds"
+	}
+}
 
 
         
