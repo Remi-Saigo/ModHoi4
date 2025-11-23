@@ -43,5 +43,27 @@ ideas = {
 		FRA_the_young_school_BMV = {
 
 		}
+
+		POR_export_resources_BMV = {
+			picture = can_wartime_prices_and_trade_board
+
+			allowed = {
+				tag = POR
+			}
+
+			cancel = {
+				has_war = yes
+			}
+			
+			rule = {
+				can_join_factions = no
+			}
+
+			modifier = {
+				enemy_justify_war_goal_time = 1000
+				min_export = 1
+				consumer_goods_expected_value = 1
+			}
+		}
     }
 }

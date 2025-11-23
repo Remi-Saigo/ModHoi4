@@ -69,4 +69,8 @@
 		0,			-- pp cost if 1 available scientist
 		0,			-- pp cost if 2 available scientist
 		0			-- pp cost if more than 2 available scientist
-        }
+    }
+
+    NProduction = {
+        RESOURCE_TO_ENERGY_COEFFICIENT = 30.0, -- How much energy per coal produces
+    }
