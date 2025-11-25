@@ -72,5 +72,6 @@
     }
 
     NProduction = {
-        RESOURCE_TO_ENERGY_COEFFICIENT = 30.0, -- How much energy per coal produces
+        RESOURCE_TO_ENERGY_COEFFICIENT = 36.0, -- How much energy per coal produces
+        BASE_ENERGY_COST = 0.05,						-- How much energy per factory consumes
     }
