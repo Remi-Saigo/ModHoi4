@@ -1,0 +1,41 @@
+add_namespace = BMV
+
+## ENG garanties POL ##
+
+country_event = {
+
+	id = BMV.1
+	title = BMV.1.t
+	desc = BMV.1.d
+
+	picture = GFX_report_event_degaulle_churchill
+
+	trigger = {
+		date = 1936.1.2
+
+		OR = {
+			AND = {
+				tag = FRA
+				NOT = { has_guaranteed = POL }
+			}
+			AND = {
+				tag = ENG
+				NOT = { has_guaranteed = POL }
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+ 			add_named_threat = { threat = 4 name = BMV.1.t }
+ 		}
+	}
+
+	option = {
+		name = BMV.1.a
+
+		ROOT = {
+			give_guarantee = POL
+		}
+	}
+}
