@@ -9,5 +9,5 @@ tags={
 	"Technologies"
 }
 name="BMV+"
-supported_version="1.17.0"
+supported_version="1.17.1.1"
 remote_file_id="3610594735"

@@ -2339,6 +2339,7 @@ focus_tree = {
 		relative_position_id = GER_seize_foreign_industries
 		cost = 10
 		available = {
+			date > 1940.8.1
 			all_core_state = {
 				is_fully_controlled_by = ROOT
 			}
@@ -2415,13 +2416,13 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = rubber
-					amount > 49 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 300 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_subject_country = {
 					has_resources_in_country = {
 						resource = rubber
-						amount > 49 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 300 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}
