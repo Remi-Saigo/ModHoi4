@@ -36,14 +36,6 @@ ideas = {
 			}
 		}
 
-		FRA_entrepeneurship_BMV = {
-			 
-		}
-
-		FRA_the_young_school_BMV = {
-
-		}
-
 		POR_export_resources_BMV = {
 			picture = can_wartime_prices_and_trade_board
 

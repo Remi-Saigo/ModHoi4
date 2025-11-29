@@ -65,10 +65,13 @@ RULE_ALLOW_SUBJECT_TRANSFERS_BLOCKED_DESC: "Interdire le transfert d'états des 
 
 RULE_USE_NEW_TOOL: "Utiliser la nouvelle version du mod"
 
-
-
 # Focus
 
 uk_egypt_focus: "Développer l’Égypte"
 uk_egypt_focus_desc: "L’Égypte conserve un lien fort avec notre nation et a mis en garde contre la menace fasciste. Leur contribution en cas de guerre est certaine, et nous devrions les aider à s’y préparer en conséquence."
 
+# Events
+
+BMV.1.t: "Les Alliés doivent protéger la Pologne face au Reich"
+BMV.1.d: "Face aux annexions successives de l’Autriche, pourtant interdites par le traité de Versailles, et de la Bohême, les intentions de l’Allemagne sont désormais parfaitement claires. Il est évident que le Reich finira tôt ou tard par s’en prendre à la Pologne. Nous devons donc nous préparer à la défendre."
+BMV.1.a: "Garantissons donc la Pologne"
