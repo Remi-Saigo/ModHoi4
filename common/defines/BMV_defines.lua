@@ -25,7 +25,7 @@
 
 
     -- Cost of garentie
-    NDefines.NDiplomacy.GUARANTEE_COST = 9999   -- Coût d'une garentie d'indépendence
+    NDefines.NDiplomacy.GUARANTEE_COST = 9999   -- Coût d'une garantie d'indépendence
 
     -- Save focus
     NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 70
@@ -38,6 +38,10 @@
     -- More dock for capital ship
 	NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 30 -- 5 de base
     NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 30 -- 10 de base
+
+    NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- Free license
+    NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                        -- Free license
+    NDefines.NProduction.BASE_LICENSE_IC_COST = 0						    -- Base IC cost for lended license
 
 
     -- Anti-Autism (HMM)
@@ -71,7 +75,9 @@
 		0			-- pp cost if more than 2 available scientist
     }
 
-    NProduction = {
-        RESOURCE_TO_ENERGY_COEFFICIENT = 36.0, -- How much energy per coal produces
-        BASE_ENERGY_COST = 0.10,						-- How much energy per factory consumes
-    }
+	NDoctrines = {
+			DEFAULT_REWARD_MASTERY = 100.0,                       
+			TRAINING_MASTERY_GAIN_FACTOR = 1,                     -- 0.1 (base) 
+			MAX_MONTHLY_MASTERY_GAIN = 50.0,                       
+			MIN_MASTERY_GAIN_PER_DAY = 0.0,                         -- 0.0 (base) 
+				}
